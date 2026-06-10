@@ -1,14 +1,20 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { marked } from 'marked';
 
 function getContentData(fileName) {
-  const filePath = path.join(process.cwd(), 'content', fileName);
-  const fileContent = fs.readFileSync(filePath, 'utf-8');
-  const { data, content } = matter(fileContent);
-  const htmlContent = marked(content);
-  return { data, htmlContent };
+  try {
+    const filePath = path.join(process.cwd(), 'content', fileName);
+    const fileContent = fs.readFileSync(filePath, 'utf-8');
+    const { data, content } = matter(fileContent);
+    return { data, content };
+  } catch (error) {
+    
+    return { 
+      data: { title: "En cours d'écriture...", category: "Littérature", meta: "", excerpt: "" }, 
+      content: "Le texte sera bientôt disponible." 
+    };
+  }
 }
 
 export default function HomePage() {
@@ -18,8 +24,8 @@ export default function HomePage() {
   return (
     <main className="max-w-7xl mx-auto px-6 py-12">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-        
-  
+
+    
         <section className="lg:col-span-7 space-y-6">
           <div className="flex items-center space-x-3 text-xs font-bold uppercase tracking-wider text-terracotta">
             <span>{essay.data.category}</span>
@@ -31,14 +37,14 @@ export default function HomePage() {
             {essay.data.title}
           </h2>
           
-          <p className="text-lg text-encre/80 font-medium leading-relaxed italic">
+          <p className="text-lg text-encre/80 font-medium leading-relaxed italic border-l-2 border-terracotta pl-4">
             {essay.data.excerpt}
           </p>
 
     
-            className="prose-essay text-base text-encre/90 leading-relaxed space-y-6 pt-4"
-            dangerouslySetInnerHTML={{ __html: essay.htmlContent }}
-          />
+          <article className="prose-essay text-base text-encre/90 leading-relaxed space-y-6 pt-4 whitespace-pre-line">
+            {essay.content}
+          </article>
         </section>
 
     
@@ -51,13 +57,11 @@ export default function HomePage() {
             {poem.data.title}
           </h3>
           
-  
-          <div 
-            className="font-serif text-lg text-encre/90 leading-loose text-center whitespace-pre-line italic pt-4"
-            dangerouslySetInnerHTML={{ __html: poem.htmlContent }}
-          />
+          <div className="font-serif text-lg text-encre/90 leading-loose text-center whitespace-pre-line italic pt-4">
+            {poem.content}
+          </div>
           
-          <div className="text-center pt-6 border-t border-terracotta/10 text-xs text-encre/40 italic">
+          <div className="text-center pt-6 border-t border-t-terracotta/10 text-xs text-encre/40 italic">
             {poem.data.meta}
           </div>
         </aside>
@@ -65,4 +69,3 @@ export default function HomePage() {
       </div>
     </main>
   );
-    }
