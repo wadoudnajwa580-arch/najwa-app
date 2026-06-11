@@ -3,12 +3,11 @@ export default function HomePage() {
     <main className="max-w-7xl mx-auto px-6 py-16">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
         
-        {/* SECTION GAUCHE : L'ÉDITORIAL À LA UNE */}
         <section className="lg:col-span-7 space-y-8">
           <div className="flex items-center space-x-3 text-xs font-bold uppercase tracking-widest text-terracotta">
             <span>Psychologie Sociale</span>
             <span>•</span>
-            <span className="text-encre/40">☕ 4 min de lecture • Écrit par une nuit de vent</span>
+            <span className="text-encre/40">☕ 4 min de lecture</span>
           </div>
           
           <h2 className="font-serif text-4xl lg:text-6xl font-bold leading-tight tracking-tight text-encre">
@@ -21,18 +20,16 @@ export default function HomePage() {
 
           <div className="pt-6">
             <a 
-              href="/archives" 
+              href="/archives/le-syndrome-du-cameleon" 
               className="inline-flex items-center space-x-3 group text-xs font-bold uppercase tracking-widest text-encre border-b-2 border-encre pb-2 hover:text-terracotta hover:border-terracotta transition-all"
             >
-              <span>Découvrir l'Index complet</span>
+              <span>Lire l'essai complet</span>
               <span>→</span>
             </a>
           </div>
         </section>
 
-        {/* SECTION DROITE : L'ENCADRÉ CRÉATIF */}
         <aside className="lg:col-span-5 space-y-12">
-          
           <div className="bg-creme/60 border border-terracotta/10 p-8 lg:p-10 rounded-sm space-y-6 shadow-sm">
             <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-terracotta/70 text-center">
               — Anthologie Spontanée —
@@ -48,10 +45,10 @@ export default function HomePage() {
             
             <div className="text-center pt-4">
               <a 
-                href="/archives" 
+                href="/archives/coquillages" 
                 className="text-xs font-bold uppercase tracking-wider text-terracotta hover:text-encre transition-colors"
               >
-                Consulter les écrits
+                Écouter le murmure
               </a>
             </div>
           </div>
@@ -69,10 +66,8 @@ export default function HomePage() {
               </span>
             </div>
           </div>
-
         </aside>
 
       </div>
     </main>
-  );
-    }
+  );}
