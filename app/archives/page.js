@@ -44,7 +44,7 @@ export default function ArchivesPage() {
             <div className="flex items-center space-x-2 text-[11px] font-bold uppercase tracking-wider text-terracotta">
               <span>Cahiers Poétiques</span>
               <span>•</span>
-              <span className="text-encre/40">Phase Lutéale</span>
+              <span className="text-encre/40">Âme luisante</span>
             </div>
             <h3 className="font-serif text-2xl font-bold italic text-encre hover:text-terracotta transition-colors">
               <a href="/archives/coquillages">Coquillages</a>
