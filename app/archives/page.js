@@ -24,7 +24,6 @@ export default function ArchivesPage() {
   return (
     <main className="max-w-5xl mx-auto px-6 py-16 space-y-16">
       
-      {/* En-tête de la page */}
       <div className="space-y-4 text-center">
         <div className="text-xs font-bold uppercase tracking-widest text-terracotta">
           L'Index du Laboratoire
@@ -40,7 +39,7 @@ export default function ArchivesPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
         
-        {/* COLONNE GAUCHE : ESSAIS & DIALOGUES */}
+        {/* COLONNE GAUCHE : ESSAIS */}
         <div className="space-y-8">
           <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-encre/40 border-b border-encre/10 pb-3">
             I. Essais & Perspectives
@@ -66,7 +65,7 @@ export default function ArchivesPage() {
           ))}
         </div>
 
-        {/* COLONNE DROITE : CAHIERS POÉTIQUES */}
+        {/* COLONNE DROITE : POÉSIE */}
         <div className="space-y-8">
           <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-encre/40 border-b border-encre/10 pb-3">
             II. Fragments & Poésie
@@ -93,5 +92,6 @@ export default function ArchivesPage() {
         </div>
 
       </div>
-
     </main>
+);
+                      }
