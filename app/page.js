@@ -6,12 +6,11 @@ function getContentData(fileName) {
   try {
     const filePath = path.join(process.cwd(), 'content', fileName);
     const fileContent = fs.readFileSync(filePath, 'utf-8');
-    const { data, content } = matter(fileContent);
-    return { data, content };
+    const { data } = matter(fileContent);
+    return { data };
   } catch (error) {
     return { 
-      data: { title: "En cours d'écriture...", category: "Littérature", meta: "", excerpt: "" }, 
-      content: "Le texte sera bientôt disponible." 
+      data: { title: "En cours d'écriture...", category: "Littérature", meta: "", excerpt: "" }
     };
   }
 }
@@ -21,50 +20,78 @@ export default function HomePage() {
   const poem = getContentData('coquillages.md');
 
   return (
-    <main className="max-w-7xl mx-auto px-6 py-12">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+    <main className="max-w-7xl mx-auto px-6 py-16">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
         
-        {/* GAUCHE : L'ESSAI PSYCHOLOGIQUE */}
-        <section className="lg:col-span-7 space-y-6">
-          <div className="flex items-center space-x-3 text-xs font-bold uppercase tracking-wider text-terracotta">
+  
+        <section className="lg:col-span-7 space-y-8">
+          <div className="flex items-center space-x-3 text-xs font-bold uppercase tracking-widest text-terracotta">
             <span>{essay.data.category}</span>
             <span>•</span>
-            <span className="text-encre/50">{essay.data.meta}</span>
+            <span className="text-encre/40">{essay.data.meta}</span>
           </div>
           
-          <h2 className="font-serif text-4xl lg:text-5xl font-bold leading-tight">
+          <h2 className="font-serif text-4xl lg:text-6xl font-bold leading-tight tracking-tight text-encre">
             {essay.data.title}
           </h2>
           
-          <p className="text-lg text-encre/80 font-medium leading-relaxed italic border-l-2 border-terracotta pl-4">
-            {essay.data.excerpt}
+          <p className="text-xl text-encre/80 font-serif leading-relaxed italic border-l-4 border-terracotta pl-6 py-2">
+            "{essay.data.excerpt}"
           </p>
 
-          <article className="prose-essay text-base text-encre/90 leading-relaxed space-y-6 pt-4 whitespace-pre-line">
-            {essay.content}
-          </article>
+          <div className="pt-6">
+            <a 
+              href="/archives/le-syndrome-du-cameleon" 
+              className="inline-flex items-center space-x-3 group text-xs font-bold uppercase tracking-widest text-encre border-b-2 border-encre pb-2 hover:text-terracotta hover:border-terracotta transition-all"
+            >
+              <span>Lire l'essai complet</span>
+              <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+            </a>
+          </div>
         </section>
 
-        {/* DROITE : LE POÈME */}
-        <aside className="lg:col-span-5 bg-creme border border-terracotta/10 p-8 lg:p-10 rounded-sm space-y-6">
-          <div className="text-xs font-bold uppercase tracking-wider text-terracotta border-b border-terracotta/20 pb-3">
-            Le Souffle Poétique
-          </div>
+        <aside className="lg:col-span-5 space-y-12">
           
-          <h3 className="font-serif text-3xl italic font-semibold text-center text-terracotta">
-            {poem.data.title}
-          </h3>
-          
-          <div className="font-serif text-lg text-encre/90 leading-loose text-center whitespace-pre-line italic pt-4">
-            {poem.content}
+  
+          <div className="bg-creme/60 border border-terracotta/10 p-8 lg:p-10 rounded-sm space-y-6 shadow-sm">
+            <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-terracotta/70 text-center">
+              — Anthologie Spontanée —
+            </div>
+            
+            <h3 className="font-serif text-3xl italic font-semibold text-center text-encre">
+              {poem.data.title}
+            </h3>
+            
+            <p className="text-sm text-encre/70 text-center font-serif leading-relaxed italic max-w-xs mx-auto">
+              « ...apprenez-moi la science secrète des choses qui survivent en se laissant traverser. »
+            </p>
+            
+            <div className="text-center pt-4">
+              <a 
+                href="/archives/coquillages" 
+                className="text-xs font-bold uppercase tracking-wider text-terracotta hover:text-encre transition-colors"
+              >
+                Écouter le murmure
+              </a>
+            </div>
           </div>
-          
-          <div className="text-center pt-6 border-t border-t-terracotta/10 text-xs text-encre/40 italic">
-            {poem.data.meta}
+
+
+          <div className="px-4 space-y-4">
+            <h4 className="text-xs font-bold uppercase tracking-widest text-encre/40">
+              Notes d'ambiance
+            </h4>
+            <div className="font-serif text-base text-encre/70 leading-relaxed space-y-4">
+              <p>
+                Le laboratoire s'installe. Entre la rigidité des examens scolaires et l'immensité de l'océan, cet espace devient le point de friction où l'esprit tente de prendre forme.
+              </p>
+              <span className="inline-block text-xs uppercase tracking-wider font-sans font-bold text-terracotta">
+                Casablanca • Session d'été
+              </span>
+            </div>
           </div>
+
         </aside>
 
       </div>
     </main>
-  );
-      }
