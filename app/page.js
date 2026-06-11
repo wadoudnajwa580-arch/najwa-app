@@ -23,7 +23,6 @@ export default function HomePage() {
     <main className="max-w-7xl mx-auto px-6 py-16">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
         
-        {/* SÉCTION GAUCHE : L'ÉDITORIAL À LA UNE */}
         <section className="lg:col-span-7 space-y-8">
           <div className="flex items-center space-x-3 text-xs font-bold uppercase tracking-widest text-terracotta">
             <span>{essay.data.category}</span>
@@ -45,12 +44,11 @@ export default function HomePage() {
               className="inline-flex items-center space-x-3 group text-xs font-bold uppercase tracking-widest text-encre border-b-2 border-encre pb-2 hover:text-terracotta hover:border-terracotta transition-all"
             >
               <span>Lire l'essai complet</span>
-              <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+              <span>→</span>
             </a>
           </div>
         </section>
 
-        {/* SÉCTION DROITE : L'ENCADRÉ CRÉATIF */}
         <aside className="lg:col-span-5 space-y-12">
           
           <div className="bg-creme/60 border border-terracotta/10 p-8 lg:p-10 rounded-sm space-y-6 shadow-sm">
@@ -94,3 +92,5 @@ export default function HomePage() {
 
       </div>
     </main>
+  );
+    }
