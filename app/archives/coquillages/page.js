@@ -108,9 +108,7 @@ qui me perds en elle ?`;
   
       <div className="w-full h-80 overflow-hidden rounded-sm relative my-12 border border-terracotta/10 shadow-sm">
         <img 
-          src="https://unsplash.com" 
-          alt="Texture de toile de peinture à l'huile abstraite, sombre et organique"
-          className="w-full h-full object-cover grayscale opacity-90 contrast-125"
+          src="https://i.etsystatic.com/47253026/r/il/5a3c79/6207267199/il_fullxfull.6207267199_lxis.jpg"
         />
       </div>
 
