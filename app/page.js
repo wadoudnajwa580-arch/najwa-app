@@ -9,7 +9,6 @@ function getContentData(fileName) {
     const { data, content } = matter(fileContent);
     return { data, content };
   } catch (error) {
-    
     return { 
       data: { title: "En cours d'écriture...", category: "Littérature", meta: "", excerpt: "" }, 
       content: "Le texte sera bientôt disponible." 
@@ -24,8 +23,8 @@ export default function HomePage() {
   return (
     <main className="max-w-7xl mx-auto px-6 py-12">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-
-    
+        
+        {/* GAUCHE : L'ESSAI PSYCHOLOGIQUE */}
         <section className="lg:col-span-7 space-y-6">
           <div className="flex items-center space-x-3 text-xs font-bold uppercase tracking-wider text-terracotta">
             <span>{essay.data.category}</span>
@@ -41,13 +40,12 @@ export default function HomePage() {
             {essay.data.excerpt}
           </p>
 
-    
           <article className="prose-essay text-base text-encre/90 leading-relaxed space-y-6 pt-4 whitespace-pre-line">
             {essay.content}
           </article>
         </section>
 
-    
+        {/* DROITE : LE POÈME */}
         <aside className="lg:col-span-5 bg-creme border border-terracotta/10 p-8 lg:p-10 rounded-sm space-y-6">
           <div className="text-xs font-bold uppercase tracking-wider text-terracotta border-b border-terracotta/20 pb-3">
             Le Souffle Poétique
@@ -69,3 +67,4 @@ export default function HomePage() {
       </div>
     </main>
   );
+      }
