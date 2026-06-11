@@ -14,8 +14,9 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata = {
-  title: 'NAJWA OUADOUD.',
+  title: 'NAJWA OUADOUD',
   description: 'Essais vidéo, psychologie et cahiers poétiques.',
+  manifest: '/manifest.json', 
 };
 
 export default function RootLayout({ children }) {
