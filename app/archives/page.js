@@ -39,7 +39,6 @@ export default function ArchivesPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
         
-        {/* COLONNE GAUCHE : ESSAIS */}
         <div className="space-y-8">
           <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-encre/40 border-b border-encre/10 pb-3">
             I. Essais & Perspectives
@@ -65,7 +64,6 @@ export default function ArchivesPage() {
           ))}
         </div>
 
-        {/* COLONNE DROITE : POÉSIE */}
         <div className="space-y-8">
           <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-encre/40 border-b border-encre/10 pb-3">
             II. Fragments & Poésie
@@ -93,5 +91,5 @@ export default function ArchivesPage() {
 
       </div>
     </main>
-);
+  );
                       }
