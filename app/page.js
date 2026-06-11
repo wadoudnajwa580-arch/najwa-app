@@ -23,7 +23,7 @@ export default function HomePage() {
     <main className="max-w-7xl mx-auto px-6 py-16">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
         
-  
+        {/* SÉCTION GAUCHE : L'ÉDITORIAL À LA UNE */}
         <section className="lg:col-span-7 space-y-8">
           <div className="flex items-center space-x-3 text-xs font-bold uppercase tracking-widest text-terracotta">
             <span>{essay.data.category}</span>
@@ -50,9 +50,9 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* SÉCTION DROITE : L'ENCADRÉ CRÉATIF */}
         <aside className="lg:col-span-5 space-y-12">
           
-  
           <div className="bg-creme/60 border border-terracotta/10 p-8 lg:p-10 rounded-sm space-y-6 shadow-sm">
             <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-terracotta/70 text-center">
               — Anthologie Spontanée —
@@ -75,7 +75,6 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-
 
           <div className="px-4 space-y-4">
             <h4 className="text-xs font-bold uppercase tracking-widest text-encre/40">
