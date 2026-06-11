@@ -89,7 +89,6 @@ export default function CaméléonPage() {
 
       </article>
 
-      {/* 3. PIED DE PAGE EN BLOC REPLIABLE */}
       <div className="pt-16 text-center border-t border-terracotta/10">
         <a href="/archives" className="inline-block border border-encre/20 text-encre/60 text-xs font-bold uppercase tracking-widest px-6 py-3 rounded-sm hover:bg-encre hover:text-white transition-all">
           ← Retour aux archives
