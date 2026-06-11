@@ -1,0 +1,17 @@
+{
+  "theme_color": "#FAF6F0",
+  "background_color": "#FAF6F0",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Najwa Ouadoud Journal",
+  "short_name": "Najwa Journal",
+  "description": "Essais de psychologie et cahiers poétiques.",
+  "icons": [
+    {
+      "src": "https://flaticon.com",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
