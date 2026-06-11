@@ -1,26 +1,4 @@
 export default function ArchivesPage() {
-  const essays = [
-    {
-      title: "Le Syndrome du Caméléon : Pourquoi ton authenticité te fait peur",
-      slug: "le-syndrome-du-cameleon",
-      category: "Psychologie Sociale",
-      date: "Juin 2026",
-      readTime: "4 min",
-      excerpt: "Une autopsie philosophique du besoin d'approbation et du conformisme social à travers l'expérience des lignes d'Asch."
-    }
-  ];
-
-  const poems = [
-    {
-      title: "Coquillages",
-      slug: "coquillages",
-      category: "Cahiers Poétiques",
-      date: "Juin 2026",
-      note: "Phase Lutéale",
-      excerpt: "parlez-moi coquillages / parlez bas, parlez long / que vos voix voyagent / dans le velours des vagues..."
-    }
-  ];
-
   return (
     <main className="max-w-5xl mx-auto px-6 py-16 space-y-16">
       
@@ -39,57 +17,55 @@ export default function ArchivesPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
         
+        {/* COLONNE ESSAIS */}
         <div className="space-y-8">
           <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-encre/40 border-b border-encre/10 pb-3">
             I. Essais & Perspectives
           </h2>
           
-          {essays.map((essay, index) => (
-            <article key={index} className="space-y-3 group">
-              <div className="flex items-center space-x-2 text-[11px] font-bold uppercase tracking-wider text-terracotta">
-                <span>{essay.category}</span>
-                <span>•</span>
-                <span className="text-encre/40">{essay.readTime}</span>
-              </div>
-              <h3 className="font-serif text-2xl font-bold group-hover:text-terracotta transition-colors">
-                <a href={`/archives/${essay.slug}`}>{essay.title}</a>
-              </h3>
-              <p className="text-sm text-encre/70 leading-relaxed font-serif italic">
-                {essay.excerpt}
-              </p>
-              <div className="text-[11px] text-encre/40 tracking-wider">
-                {essay.date}
-              </div>
-            </article>
-          ))}
+          <article className="space-y-3">
+            <div className="flex items-center space-x-2 text-[11px] font-bold uppercase tracking-wider text-terracotta">
+              <span>Psychologie Sociale</span>
+              <span>•</span>
+              <span className="text-encre/40">4 min</span>
+            </div>
+            <h3 className="font-serif text-2xl font-bold text-encre">
+              Le Syndrome du Caméléon : Pourquoi ton authenticité te fait peur
+            </h3>
+            <p className="text-sm text-encre/70 leading-relaxed font-serif italic">
+              Une autopsie philosophique du besoin d'approbation et du conformisme social à travers l'expérience des lignes d'Asch.
+            </p>
+            <div className="text-[11px] text-encre/40 tracking-wider">
+              Juin 2026
+            </div>
+          </article>
         </div>
 
+        {/* COLONNE POÉSIE */}
         <div className="space-y-8">
           <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-encre/40 border-b border-encre/10 pb-3">
             II. Fragments & Poésie
           </h2>
           
-          {poems.map((poem, index) => (
-            <article key={index} className="space-y-3 group">
-              <div className="flex items-center space-x-2 text-[11px] font-bold uppercase tracking-wider text-terracotta">
-                <span>{poem.category}</span>
-                <span>•</span>
-                <span className="text-encre/40">{poem.note}</span>
-              </div>
-              <h3 className="font-serif text-2xl font-bold italic group-hover:text-terracotta transition-colors">
-                <a href={`/archives/${poem.slug}`}>{poem.title}</a>
-              </h3>
-              <p className="text-sm text-encre/60 leading-relaxed font-serif whitespace-pre-line border-l border-terracotta/20 pl-4">
-                {poem.excerpt}
-              </p>
-              <div className="text-[11px] text-encre/40 tracking-wider">
-                {poem.date}
-              </div>
-            </article>
-          ))}
+          <article className="space-y-3">
+            <div className="flex items-center space-x-2 text-[11px] font-bold uppercase tracking-wider text-terracotta">
+              <span>Cahiers Poétiques</span>
+              <span>•</span>
+              <span className="text-encre/40">Phase Lutéale</span>
+            </div>
+            <h3 className="font-serif text-2xl font-bold italic text-encre">
+              Coquillages
+            </h3>
+            <p className="text-sm text-encre/60 leading-relaxed font-serif whitespace-pre-line border-l border-terracotta/20 pl-4">
+              parlez-moi coquillages / parlez bas, parlez long / que vos voix voyagent / dans le velours des vagues...
+            </p>
+            <div className="text-[11px] text-encre/40 tracking-wider">
+              Juin 2026
+            </div>
+          </article>
         </div>
 
       </div>
     </main>
   );
-                      }
+    }
