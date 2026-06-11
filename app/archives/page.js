@@ -17,51 +17,41 @@ export default function ArchivesPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
         
-        {/* COLONNE ESSAIS */}
         <div className="space-y-8">
           <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-encre/40 border-b border-encre/10 pb-3">
             I. Essais & Perspectives
           </h2>
-          
           <article className="space-y-3">
             <div className="flex items-center space-x-2 text-[11px] font-bold uppercase tracking-wider text-terracotta">
               <span>Psychologie Sociale</span>
               <span>•</span>
               <span className="text-encre/40">4 min</span>
             </div>
-            <h3 className="font-serif text-2xl font-bold text-encre">
-              Le Syndrome du Caméléon : Pourquoi ton authenticité te fait peur
+            <h3 className="font-serif text-2xl font-bold text-encre hover:text-terracotta transition-colors">
+              <a href="/archives/le-syndrome-du-cameleon">Le Syndrome du Caméléon : Pourquoi ton authenticité te fait peur</a>
             </h3>
             <p className="text-sm text-encre/70 leading-relaxed font-serif italic">
               Une autopsie philosophique du besoin d'approbation et du conformisme social à travers l'expérience des lignes d'Asch.
             </p>
-            <div className="text-[11px] text-encre/40 tracking-wider">
-              Juin 2026
-            </div>
           </article>
         </div>
 
-        {/* COLONNE POÉSIE */}
         <div className="space-y-8">
           <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-encre/40 border-b border-encre/10 pb-3">
             II. Fragments & Poésie
           </h2>
-          
           <article className="space-y-3">
             <div className="flex items-center space-x-2 text-[11px] font-bold uppercase tracking-wider text-terracotta">
               <span>Cahiers Poétiques</span>
               <span>•</span>
-              <span className="text-encre/40">Âme luisante</span>
+              <span className="text-encre/40">Phase Lutéale</span>
             </div>
-            <h3 className="font-serif text-2xl font-bold italic text-encre">
-              Coquillages
+            <h3 className="font-serif text-2xl font-bold italic text-encre hover:text-terracotta transition-colors">
+              <a href="/archives/coquillages">Coquillages</a>
             </h3>
             <p className="text-sm text-encre/60 leading-relaxed font-serif whitespace-pre-line border-l border-terracotta/20 pl-4">
-              parlez-moi coquillages / parlez bas, parlez long / que vos voix voyagent / dans le velours des vagues...
+              parlez-moi coquillages / parlez bas, parlez long / que vos voix voyagent dans le velours des vagues...
             </p>
-            <div className="text-[11px] text-encre/40 tracking-wider">
-              Juin 2026
-            </div>
           </article>
         </div>
 
