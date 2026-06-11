@@ -17,7 +17,7 @@ export default function AboutPage() {
         </div>
         
         <div className="lg:col-span-8 bg-creme/40 border border-terracotta/10 p-8 rounded-sm font-serif text-lg italic leading-relaxed text-encre/80 shadow-sm">
-          « Il est 2 heures du matin. De ma fenêtre, je n'entends pas la ville, non, j\'entends le bruit blanc de l\'Atlantique. Sur mon bureau, il y a un manuel de psychologie cognitive ouvert, trois carnets d\'encre noire et un thermomètre de jeune fille. C\'est de ce désordre exact qu\'est né ce journal. »
+          « Il est 2 heures du matin. De ma fenêtre, je n'entends pas la ville, non, j'entends le bruit blanc de l'Atlantique. Sur mon bureau, il y a un manuel de psychologie cognitive ouvert, trois carnets d'encre noire et un thermomètre de jeune fille. C'est de ce désordre exact qu'est né ce journal. »
         </div>
       </div>
 
@@ -29,13 +29,13 @@ export default function AboutPage() {
         
         <article className="font-serif text-lg text-encre/90 leading-relaxed space-y-6 text-justify prose-essay">
           <p>
-            J'ai longtemps cru que pour être respectée, il fallait être invisible. Se fondre dans le décor des salles de classe, opiner du chef devant les adultes, et garder ses tempêtes intérieures pour les pages cachées d\'un journal intime. C’est le piège du confort social. Parfois, on s\'excuse d\'exister à haute voix.
+            J'ai longtemps cru que pour être respectée, il fallait être invisible. Se fondre dans le décor des salles de classe, opiner du chef devant les adultes, et garder ses tempêtes intérieures pour les pages cachées d'un journal intime. C’est le piège du confort social. Parfois, on s'excuse d'exister à haute voix.
           </p>
           <p>
-            Mais cet été, quelque chose a rompu. J'ai enfin compris que l\'autonomie ne se reçoit pas, qu\'elle se prend. Et ce site est mon premier acte d\'indépendance. Il n\'a pas été conçu pour plaire à une audience, mais pour forcer ma propre voix à s\'articuler, sans bégayer, face au monde. 
+            Mais cet été, quelque chose a rompu. J'ai enfin compris que l'autonomie ne se reçoit pas, qu'elle se prend. Et ce site est mon premier acte d'indépendance. Il n'a pas été conçu pour plaire à une audience, mais pour forcer ma propre voix à s'articuler, sans bégayer, face au monde. 
           </p>
           <p>
-            Je ne cherche pas la perfection d'une image lissée. C\'est la précision du diagnostic que je cherche. Si un professeur, un inconnu ou un pair s\'arrête ici, je ne veux pas qu\'il voie une étudiante qui récite, mais une pensée en train de se chercher, de se tromper, et de prendre forme.
+            Je ne cherche pas la perfection d'une image lissée. C'est la précision du diagnostic que je cherche. Si un professeur, un inconnu ou un pair s'arrête ici, je ne veux pas qu'il voie une étudiante qui récite, mais une pensée en train de se chercher, de se tromper, et de prendre forme.
           </p>
         </article>
       </div>
@@ -61,7 +61,7 @@ export default function AboutPage() {
             <span className="font-serif text-3xl font-bold text-terracotta">02 /</span>
             <h4 className="font-serif text-xl font-bold italic">La Chair des Mots</h4>
             <p className="text-sm text-encre/70 leading-relaxed">
-              Écrire une poésie brute, rythmée par les cycles du corps et les marées de Casablanca. Laisser les mots s'abîmer, se cicatriser par le sel, et accepter que l'art commence là où la science n'a plus de réponses à offrir.
+              Écrire une poésie brute, rythmée par les cycles du corps et les marées de Casablanca. Laisser les mots s'abîmer, se cicatriser par le sel, et accepter que l'art commence là où la science n'a plus de réponses à nous offrir.
             </p>
           </div>
 
