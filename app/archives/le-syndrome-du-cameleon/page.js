@@ -44,8 +44,7 @@ export default function CaméléonPage() {
   
         <div className="w-full h-72 overflow-hidden rounded-sm relative my-8 border border-terracotta/10 shadow-sm">
           <img 
-            src="https://worldoffinewine.com/wp-content/uploads/sites/9/2024/07/identity-1038x778.webp"
-              />
+            src="https://worldoffinewine.com/wp-content/uploads/sites/9/2024/07/identity-1038x778.webp"/>
         </div>
 
         <h4 className="font-serif text-xl font-bold text-terracotta pt-4 italic">II. L'Auto-Surveillance et la Maison de Verre</h4>
@@ -69,8 +68,7 @@ export default function CaméléonPage() {
   
         <div className="w-full h-72 overflow-hidden rounded-sm relative my-8 border border-terracotta/10 shadow-sm">
           <img 
-            src="https://images.saatchiart.com/saatchi/1474341/art/7974435/7041861-HSC00001-7.jpg"
-          />
+            src="https://images.saatchiart.com/saatchi/1474341/art/7974435/7041861-HSC00001-7.jpg"/>
         </div>
 
         <h4 className="font-serif text-xl font-bold text-terracotta pt-4 italic">III. L'Éducation à la Friction</h4>
