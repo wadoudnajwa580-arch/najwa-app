@@ -14,7 +14,7 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata = {
-  title: 'NAJWA OUADOUD.',
+  title: 'NAJWA OUADOUD',
   description: 'Essais de psychologie, philosophie et cahiers poétiques.',
   manifest: '/manifest.json',
 };
@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
             {/* Le Titre et le clin d'œil subtil au Maroc */}
             <div className="flex items-center space-x-3">
               <a href="/" className="font-serif text-3xl font-bold tracking-[0.2em] hover:text-terracotta transition-colors">
-                NAJWA OUADOUD.
+                NAJWA OUADOUD
               </a>
               {/* Drapeau minimaliste en CSS pur */}
               <div className="flex items-center justify-center w-5 h-3.5 bg-[#C1272D] rounded-[2px] shadow-sm relative overflow-hidden group" title="Rabat, Maroc">
