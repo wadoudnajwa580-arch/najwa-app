@@ -55,10 +55,12 @@ export default function ArchivesPage() {
         </div>
 
   
-        <div className="space-y-8">
+                <div className="space-y-12">
           <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-encre/40 border-b border-encre/10 pb-3">
             II. Fragments & Poésie
           </h2>
+
+          {/* Poème 1 : Coquillages */}
           <article className="space-y-3">
             <div className="flex items-center space-x-2 text-[11px] font-bold uppercase tracking-wider text-terracotta">
               <span>Cahiers Poétiques</span>
@@ -70,6 +72,21 @@ export default function ArchivesPage() {
             </h3>
             <p className="text-sm text-encre/60 leading-relaxed font-serif whitespace-pre-line border-l border-terracotta/20 pl-4">
               parlez-moi coquillages / parlez bas, parlez long / que vos voix voyagent dans le velours des vagues...
+            </p>
+          </article>
+
+          {/* Poème 2 : Les Liens de l'Or */}
+          <article className="space-y-3">
+            <div className="flex items-center space-x-2 text-[11px] font-bold uppercase tracking-wider text-terracotta">
+              <span>Cahiers Poétiques</span>
+              <span>•</span>
+              <span className="text-encre/40">Âme luisante</span>
+            </div>
+            <h3 className="font-serif text-2xl font-bold italic text-encre hover:text-terracotta transition-colors">
+              <a href="/archives/liens-de-or">Les Liens de l'Or</a>
+            </h3>
+            <p className="text-sm text-encre/60 leading-relaxed font-serif whitespace-pre-line border-l border-terracotta/20 pl-4">
+              L'argent fait tourner l'axe où l'homme se broie / Il rend l'homme de loi sans scrupule et sans foi...
             </p>
           </article>
         </div>
