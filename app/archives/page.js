@@ -17,10 +17,13 @@ export default function ArchivesPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
         
-        <div className="space-y-8">
+
+        <div className="space-y-12">
           <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-encre/40 border-b border-encre/10 pb-3">
             I. Essais & Perspectives
           </h2>
+          
+  
           <article className="space-y-3">
             <div className="flex items-center space-x-2 text-[11px] font-bold uppercase tracking-wider text-terracotta">
               <span>Psychologie Sociale</span>
@@ -34,8 +37,24 @@ export default function ArchivesPage() {
               Une autopsie philosophique du besoin d'approbation et du conformisme social à travers l'expérience des lignes d'Asch.
             </p>
           </article>
+
+  
+          <article className="space-y-3">
+            <div className="flex items-center space-x-2 text-[11px] font-bold uppercase tracking-wider text-terracotta">
+              <span>Critique Culturelle</span>
+              <span>•</span>
+              <span className="text-encre/40">5 min</span>
+            </div>
+            <h3 className="font-serif text-2xl font-bold text-encre hover:text-terracotta transition-colors">
+              <a href="/archives/marchesincerite">Le Marché de l'Authenticité : Quand le "Vrai" Devient un Produit</a>
+            </h3>
+            <p className="text-sm text-encre/70 leading-relaxed font-serif italic">
+              Une réflexion incisive sur l'ère du capitalisme intime, où l'exposition scénarisée de nos fêlures remplace la quête philosophique de vérité.
+            </p>
+          </article>
         </div>
 
+  
         <div className="space-y-8">
           <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-encre/40 border-b border-encre/10 pb-3">
             II. Fragments & Poésie
@@ -58,4 +77,4 @@ export default function ArchivesPage() {
       </div>
     </main>
   );
-    }
+}
