@@ -2,7 +2,6 @@ export default function AuthenticitePage() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16 space-y-12 text-encre">
 
-    
       <div className="space-y-4 text-center">
         <div className="text-xs font-bold uppercase tracking-widest text-terracotta">
           Critique Culturelle
@@ -16,7 +15,7 @@ export default function AuthenticitePage() {
         <hr className="w-12 mx-auto border-terracotta/20 pt-4" />
       </div>
 
-  
+      
       <article className="prose-essay font-serif text-lg text-encre/90 leading-relaxed text-justify space-y-6">
         
         <p className="italic text-center text-encre/70 max-w-xl mx-auto border-l-2 border-terracotta/30 pl-4 my-8">
@@ -35,10 +34,9 @@ export default function AuthenticitePage() {
           Nous avons basculé dans l'ère du <strong>capitalisme intime</strong>. La sincérité n'est plus l'absence de masque ; elle est le masque le plus rentable du marché, une marchandise que l'on extrait de soi-même pour nourrir la machine.
         </p>
 
-  
         <div className="w-full h-72 overflow-hidden rounded-sm relative my-8 border border-terracotta/10 shadow-sm">
           <img 
-            src="https://images.saatchiart.com/saatchi/1474341/art/7974435/7041861-HSC00001-7.jpg" 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd3vACqZIcadwGehG2W04iPcxrVyzLxNaIQ5fiJX_pvPnFCrRrijmrBKY&s=10" 
             alt="Mise en scène des visages et des regards"
             className="w-full h-full object-cover"
           />
@@ -68,19 +66,28 @@ export default function AuthenticitePage() {
           Être « vrai » en ligne est devenu le plus épuisant des métiers. Il faut planifier sa spontanéité, guetter l’heure exacte où le chagrin sera le plus rentable, et scénariser son propre effondrement pour qu'il reste esthétique, digeste, <em>consommable</em>. Jean Baudrillard parlait de la simulation de la vérité pour pallier l'absence de contact réel. C'est exactement cela : quand la vulnérabilité devient une stratégie d'influence, elle s'asphyxie. Elle cesse d'être un pont jeté vers l'autre pour devenir une performance calculée, un produit de luxe emballé dans du papier kraft pour faire « authentique ».
         </p>
 
-  
+
         <div className="w-full h-72 overflow-hidden rounded-sm relative my-8 border border-terracotta/10 shadow-sm">
-          
+          <img 
+          src="https://www.digitalprojection.com/wp-content/uploads/2025/10/2.jpg.webp"
+            alt="Mise en scène des visages et des regards"
+              className="w-full h-full object-cover"
+          />
         </div>
 
         <p>
-          La différence est pourtant abyssale. L'authenticité originelle accepte le silence, le risque, la maladresse et le secret d'une pièce close. L'authenticité marchande, elle, exige une narration fluide, un <em>storytelling</em> impeccable et des métriques pour prouver qu'elle existe.
+          La différence est pourtant abyssale :
         </p>
+        
+        <ul className="list-disc list-inside pl-4 space-y-2 text-encre/80 italic">
+          <li><strong>L'authenticité originelle</strong> accepte le silence, le risque, la maladresse et le secret d'une pièce close.</li>
+          <li><strong>L'authenticité marchande</strong>, elle, exige une narration fluide, un <em>storytelling</em> impeccable et des métriques pour prouver qu'elle existe.</li>
+        </ul>
 
         <h4 className="font-serif text-xl font-bold text-terracotta pt-4 italic">III. La Dévaluation du Vrai</h4>
 
         <p>
-          Le grand drame de cette foire à la sincérité est qu'elle détruit la valeur de ce qu'elle prétend célébrer. À force de voir la douleur humaine empaquetée dans les mêmes codes algorithmiques, notre sensibilité s'émousse. Un cynisme diffus nous gagne. Devant une confession pourtant réelle, notre premier réflexe n'est plus la compassion, mais le doute : <em>« Quelle marque se cache derrière ce sanglot ? »</em>
+          Le grand souci de cette foire à la sincérité est qu'elle détruit la valeur de ce qu'elle prétend célébrer. À force de voir la douleur humaine empaquetée dans les mêmes codes algorithmiques, notre sensibilité s'émousse. Un cynisme diffus nous gagne. Devant une confession pourtant réelle, notre premier réflexe n'est plus la compassion, mais le doute : <em>« Quelle marque se cache derrière ce sanglot ? »</em>
         </p>
 
         <p>
@@ -92,6 +99,7 @@ export default function AuthenticitePage() {
         </p>
 
       </article>
+
 
       <div className="pt-16 text-center border-t border-terracotta/10">
         <a href="/archives" className="inline-block border border-encre/20 text-encre/60 text-xs font-bold uppercase tracking-widest px-6 py-3 rounded-sm hover:bg-encre hover:text-white transition-all">
